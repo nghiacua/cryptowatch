@@ -109,7 +109,7 @@ class config(object):
 
     def openFile(self,filePath):
         if platform == "linux" or platform == "linux2":
-            system("nano " + filePath)
+            system("vim " + filePath)
         elif platform == "darwin":
             system("open " + filePath)
         elif platform == "win32":
